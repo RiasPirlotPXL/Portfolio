@@ -1,0 +1,129 @@
+@font-face {
+    font-family: NIKEA;
+    src: url("Assets/Fonts/NIKEA.otf");
+}
+@font-face {
+    font-family: "Rimma_sans Bold";
+    src: url("Assets/Fonts/RIMMA_SANS-BOLD.ttf");
+}
+
+@font-face {
+    font-family: "Modero";
+    src: url("Assets/Fonts/modero.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 65px;
+    position: relative;
+    top: 0;
+    background-color: #FAF7F5;
+    border-bottom: 2px solid #E1B58C;
+    z-index: 2000;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+.nav{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 250px;
+}
+
+.navigation{
+    position: fixed;
+    right: -500px;
+    width: 350px;
+    height: 100%;
+    background-color: #111111;
+    transition: .5s;
+}
+
+a{
+    text-decoration: none;
+    color: #FAF7F5;
+    font-family: NIKEA;
+}
+
+.nav a:hover, .nav a.active{
+    color: #E1B58C;
+}
+
+.navigation ul li{
+    color: #FAF7F5;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 20px 30px;
+    border-bottom: 1pt solid #E1B58C;
+}
+
+.hamburger, .bar{
+    position: fixed;
+}
+
+.hamburger{
+    display: block;
+    top: 3%;
+    left: 90%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar{
+    top: 3px;
+    background: linear-gradient(270deg, rgba(225, 181, 140, 1) 0%, rgba(108, 195, 242, 1) 100%);
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+#bar2{
+    top: 11px;
+}
+
+#bar3{
+    top: 19px;
+}
+
+.navigation.active{
+    right: 0;
+}
+
+.hamburger.open #bar1{
+    background-color: #E1B58C;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+    background: transparent;
+}
+
+.hamburger.open #bar3{
+    background-color: #E1B58C;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Portfolio*/
+
+

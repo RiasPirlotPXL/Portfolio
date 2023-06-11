@@ -1,0 +1,50 @@
+header{
+    background: transparent;
+}
+
+
+h1{
+    font-family: NIKEA;
+    font-size: 50px;
+    color: #E1B58C;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.BGF{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: opacity(5%);
+    position: fixed;
+
+}
+
+#ABpage1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#ABpage2{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.row1, .row2, .row3, .row4{
+    width: 75vh;
+}
+
+.row1, .row4{
+    display: flex;
+    justify-content: left;
+
+}
+
+.row2, .row3{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
